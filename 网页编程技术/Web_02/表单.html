@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>表单</title>
+	</head>
+	<body>
+		<!-- 表单  交互方式  收集信息 -->
+		<form action="https://www.runoob.com/try/demo_source/html_form_action.php" method="get">
+			<!-- action 提交地址
+				method  提交方法
+			 -->
+			姓名：<input type="text" name="user" value="" /><br>
+			密码：<input type="password" name="pwd" /><br>
+			性别：
+			<label>
+			<input type="radio" name="sex" value="man">男
+			</label>
+			<label>
+			<input type="radio" name="sex" value="woman"/>女
+			</label>
+			兴趣爱好：
+			<input type="checkbox" name="hobby" value="sing"/>唱
+			<input type="checkbox" name="hobby" value="jump"/>跳
+			<input type="checkbox" name="hobby" value="sing" disabled/>禁用
+			<!-- 下拉菜单 -->
+			地址：
+			<select name="address">
+				<option value="beijing">北京</option>
+				<option value="shanghai">上海</option>
+				<option value="shenzhen" selected>深圳</option>
+				<option value="hubei" >湖北</option>
+			</select>
+			<!-- 文本域（多行文本框） -->
+			<textarea name="" id="" cols="30" rows="10"></textarea>
+			<!-- column 列  row 行
+			 cols 列数（宽度）
+			 rows 行数（高度）
+			 -->
+			<input type="submit" value="提交" />
+			<!-- type 控件类型（控件是由 type 决定）
+				text 文本输入框
+				password 密码框
+				radio 单选按钮
+				submit 提交按钮
+				checkbox 复选框
+				-->
+				<!-- 键值对
+				 name 属性  提交作为参数的值  同一项 name 保持一致
+				 checked 属性（单选，复选） 默认选中
+				 placeholder 输入内容提示
+				 disabled 禁用
+				 maxlength 最长输入长度
+				 required 必填
+				 autofocus 自动聚焦
+				 -->
+				 <input type="color" name="" id="">
+				 <input type="week" name="" id="">
+				 <input type="date" name="" id="">
+		</form>
+	</body>
+</html>
